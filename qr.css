@@ -1,481 +1,76 @@
-body {
-  background: url(./rasmlar/bg.jpg);
-    background-attachment: fixed;
-      height: 100vh;
-      margin: 0;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-
-    }
-
- header{
-  position: relative;
-  top: 0%;
-  text-align: center;
-  margin-bottom: 5%;
- }   
-    .menu-bar {
-      border-radius: 25px;
-      height: fit-content;
-      display: inline-flex;
-      background-color: rgba(0, 0, 0, .4);
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);  
-      align-items: center;
-      padding: 0 10px;
-      margin: 50px 0 0 0;
-    }
-      li {
-        list-style: none;
-        color: white;
-        font-family: sans-serif;
-        font-weight: bold;
-        padding: 12px 16px;
-        margin: 0 8px;
-        position: relative;
-        cursor: pointer;
-        white-space: nowrap;
-      }
-        li::before {
-          content: " ";
-          position: relative;
-          top: 0;
-          left:0;
-          height:100%;
-          width: 100%;
-          z-index:3;
-          transition: .2s;
-          border-radius: 25px;
-        }
-          li:hover {
-            transition: .2s;
-            border-radius: 25px;
-              background: linear-gradient(to bottom, #e8edec, #d2d1d3);
-                box-shadow: 0px 3px 20px 0px black;
-                transform: scale(1.2);
-            color: black;
-        }
-
-
-        @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-
-
-.cards{
-  width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.card__img, .card__img--hover {
-  background-image: url(../rasmlar/titanik.jpg);
-  }
-
-
-.card__like {
-  width: 18px;
-}
-
-.card__clock {
-  width: 15px;
-vertical-align: middle;
-  fill: #AD7D52;
-}
-.card__time {
-  font-size: 12px;
-  color: #AD7D52;
-  vertical-align: middle;
-  margin-left: 5px;
-}
-
-.card__clock-info {
-  float: right;
-}
-
-.card__img {
-visibility: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 235px;
-border-top-left-radius: 12px;
-border-top-right-radius: 12px;
-
-}
-
-.card__info-hover {
-  position: relative;
-  padding: 16px;
-width: 100%;
-opacity: 0;
-top: 0;
-}
-
-.card__img--hover {
-transition: 0.2s all ease-out;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-position: absolute;
-  height: 235px;
-border-top-left-radius: 12px;
-border-top-right-radius: 12px;
-top: 0;
-
-}
-.card {
-margin-right: 25px;
-transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-background-color: #fff;
-position: relative;
-border-radius: 12px;
-box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
-width: 15%;
-margin: 30px 25px;
-
-}
-.card:hover {
-box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
-  transform: scale(1.10, 1.10);
-}
-
-.card__info {
-z-index: 2;
-background-color: #fff;
-border-bottom-left-radius: 12px;
-border-bottom-right-radius: 12px;
- padding: 16px 24px 24px 24px;
-}
-
-.card__category {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: 500;
-color: #868686;
-}
-
-.card__title {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-family: 'Roboto Slab', serif;
-}
-
-.card__by {
-  font-size: 12px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-}
-
-.card__author {
-  font-weight: 600;
-  text-decoration: none;
-  color: #AD7D52;
-}
-
-.card:hover .card__img--hover {
-  height: 100%;
-  opacity: 0.3;
-}
-
-.card:hover .card__info {
-  background-color: transparent;
-  position: relative;
-}
-
-.card:hover .card__info-hover {
-  opacity: 1;
-}
-.btn-kino{
-background-color: rgba(255, 255, 255, 0.06);
-background-color: rgb(106, 106, 230);
-backdrop-filter:blur(20px); 
-border:1px solid rgba(255,255,255,0.1); 
-box-shadow:20px 20px 22px rgba(0,0,0,0.2);
-border-radius:5px;
-font-family: 'Poppins',sans-serif;
-color: white;
-}
-.btn-ochir{
-background-color: rgba(255, 255, 255, 0.06);
-background-color: rgb(218, 65, 65);
-backdrop-filter:blur(20px); 
-border:1px solid rgba(255,255,255,0.1); 
-box-shadow:20px 20px 22px rgba(0,0,0,0.2);
-border-radius:5px;
-font-family: 'Poppins',sans-serif;
-color: white;
-}
-
-
-
-
-.add{
-animation: add 1.5s;
-position: relative;
-}
-
-@keyframes add {
-    to{
-      overflow: hidden;
-      width: 0px;
-    }
-}
-
-
-::placeholder{
-color: black;
-}
-
-#btn{
-background-color: rgba(0, 0, 0, .4);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);  
-    border-radius: 25px;
-    color: white;
-}
-
-
-.containerss {
-
-  position: relative;
-
-  justify-content: space-between;
-}
-
-.containerss .cardss {
-  position: relative;
+/* From Uiverse.io by ShrinilDhorda */ 
+.btn {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
   cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
 }
 
-.containerss .cardss .facess {
-  width: 285px;
-  height: 200px;
-  border-radius: 12px;
-  transition: 0.5s;
+.btn:active {
+  scale: 0.92;
 }
 
-.containerss .cardss .facess.face1ss {
-  position: relative;
-  background: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  transform: translateY(100px);
+.btn:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
 }
 
-.containerss .cardss:hover .facess.face1ss {
-  background: #ff0057;
-  transform: translateY(0);
+/* From Uiverse.io by satyamchaudharydev */ 
+.form {
+ --width-of-input: 200px;
+ --border-height: 1px;
+ --border-before-color: rgba(221, 221, 221, 0.39);
+ --border-after-color: #5891ff;
+ --input-hovered-color: #4985e01f;
+ position: relative;
+ width: var(--width-of-input);
+}
+/* styling of Input */
+.input {
+ color: #fff;
+ font-size: 0.9rem;
+ background-color: transparent;
+ width: 100%;
+ box-sizing: border-box;
+ padding-inline: 0.5em;
+ padding-block: 0.7em;
+ border: none;
+ border-bottom: var(--border-height) solid var(--border-before-color);
+}
+/* styling of animated border */
+.input-border {
+ position: absolute;
+ background: var(--border-after-color);
+ width: 0%;
+ height: 2px;
+ bottom: 0;
+ left: 0;
+ transition: 0.3s;
+}
+/* Hover on Input */
+input:hover {
+ background: var(--input-hovered-color);
 }
 
-.containerss .cardss .facess.face1ss .contentss {
-  opacity: 0.2;
-  transition: 0.5s;
+input:focus {
+ outline: none;
 }
-
-.containerss .cardss:hover .facess.face1ss .contentss {
-  opacity: 1;
+/* here is code of animated border */
+input:focus ~ .input-border {
+ width: 100%;
 }
-
-.containerss .cardss .facess.face1ss .contentss img {
-  max-width: 100px;
-}
-
-.containerss .cardss .facess.face1ss .contentss h3 {
-  margin: 10px 0 0;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.containerss .cardss .facess.face2ss {
-  position: relative;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-  transform: translateY(-100px);
-}
-
-.containerss .cardss:hover .facess.face2ss {
-  transform: translateY(0);
-}
-
-.containerss .cardss .facess.face2ss .contentss p {
-  margin: 0;
-  padding: 0;
-}
-
-.containerss .cardss .facess.face2ss .contentss a {
-  margin: 15px 0 0;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 900;
-  color: #333;
-  padding: 5px;
-  border: 1px solid #333;
-}
-
-.containerss .cardss .facess.face2ss .contentss a:hover {
-  background: #333;
-  color: #fff;
-}
-
-
-
-/* Variables */
-:root {
-    --primary: #11998e;
-    --secondary: #38ef7d;
-    --white: #fff;
-    --gray: #9b9b9b;
-  }
-  
-  /* Styles */
-  .form__group {
-    position: relative;
-    padding: 15px 0 0;
-    margin-top: 10px;
-    width: 50%;
-  }
-  
-  .form__field {
-    font-family: inherit;
-    width: 100%;
-    border: 0;
-    border-bottom: 2px solid var(--gray);
-    outline: 0;
-    font-size: 1.3rem;
-    color: var(--white);
-    padding: 7px 0;
-    background: transparent;
-    transition: border-color 0.2s;
-  }
-  
-  .form__field::placeholder {
-    color: transparent;
-  }
-  
-  .form__field:placeholder-shown ~ .form__label {
-    font-size: 1.3rem;
-    cursor: text;
-    top: 20px;
-  }
-  
-  .form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 1rem;
-    color: var(--gray);
-  }
-  
-  .form__field:focus ~ .form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 1rem;
-    color: var(--primary);
-    font-weight: 700;
-  }
-  
-  .form__field:focus {
-    padding-bottom: 6px;
-    font-weight: 700;
-    border-width: 3px;
-    border-image: linear-gradient(to right, var(--primary), var(--secondary));
-    border-image-slice: 1;
-  }
-  
-  /* Reset input */
-  .form__field:required,
-  .form__field:invalid {
-    box-shadow: none;
-  }
-  
-  /* Demo */
-  body {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-size: 1.5rem;
-    background-color: #222222;
-  }
-  
-.glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-  }
-  
-  .glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-  }
-  
-  .glow-on-hover:active {
-    color: #000
-  }
-  
-  .glow-on-hover:active:after {
-    background: transparent;
-  }
-  
-  .glow-on-hover:hover:before {
-    opacity: 1;
-  }
-  
-  .glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-  }
-  
-  @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-  }
+/* === if you want to do animated border on typing === */
+/* remove input:focus code and uncomment below code */
+/* input:valid ~ .input-border{
+  width: 100%;
+} */
